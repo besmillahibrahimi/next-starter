@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "../configs/colors/light/theme.css";
+@import "../configs/colors/dark/theme.css";
+@import "../configs/ui/spacing/spacing.css";
+@import "../configs/ui/space/space.css";
+@import "../configs/ui/width/width.css";
+@import "../configs/ui/radius/radius.css";
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+:root {
+  .ant-btn {
+    color: hsl(var(--brand-300));
+    box-shadow: 0 0 0 0 !important;
+  }
+
+  .ant-btn:hover {
+    background-color: hsl(var(--brand-800)) !important;
+    color: hsl(var(--brand-50)) !important;
+    border-color: transparent !important;
+  }
+
+  .ant-btn-primary {
+    background-color: hsl(var(--brand));
+  }
+  .ant-btn-primary:hover {
+    background-color: hsl(var(--brand-950)) !important;
+  }
+
+  .ant-btn-link {
+    color: hsl(var(--brand));
+  }
+
+  .ant-btn-link:hover {
+    color: hsl(var(--brand-800)) !important;
+  }
+
+  .ant-btn-default {
+    color: hsl(var(--brand-400));
+    border-color: hsl(var(--brand-400));
+  }
+
+  .ant-btn-default:hover {
+    color: hsl(var(--brand-800)) !important;
+    border-color: hsl(var(--brand-800)) !important;
+  }
+}

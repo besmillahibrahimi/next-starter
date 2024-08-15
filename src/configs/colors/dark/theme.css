@@ -1,0 +1,17 @@
+@import "./colors.css";
+
+.dark {
+  --white: 0 0% 100%;
+  --black: 0 7% 14%;
+
+  --background: 192 86% 22%;
+  --foreground: 211 87% 91%;
+
+  --border: 214.3 31.8% 91.4%;
+  --input: 214.3 31.8% 91.4%;
+  /* Used for focus ring */
+  --ring: 222.2 84% 4.9%;
+
+  /* Border radius for card, input and buttons */
+  --radius: 0.5rem;
+}
